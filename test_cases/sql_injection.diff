@@ -1,0 +1,11 @@
+diff --git a/user_dao.py b/user_dao.py
+index 5555555..6666666 100644
+--- a/user_dao.py
++++ b/user_dao.py
+@@ -15,6 +15,9 @@ def get_user_by_name(conn, name):
+     cursor = conn.cursor()
+     query = "SELECT * FROM users WHERE name = '" + name + "'"
++    # FIXME: this is vulnerable to SQL injection
++    # Should use parameterized query
+     cursor.execute(query)
+     return cursor.fetchone()

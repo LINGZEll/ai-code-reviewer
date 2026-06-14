@@ -1,0 +1,9 @@
+diff --git a/calculator.py b/calculator.py
+index 1111111..2222222 100644
+--- a/calculator.py
++++ b/calculator.py
+@@ -1,4 +1,5 @@
+-def add(a, b):
++def add(a, b):
++    # TODO: add type hints
+     return a + b

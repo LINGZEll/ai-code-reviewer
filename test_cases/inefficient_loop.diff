@@ -1,0 +1,12 @@
+diff --git a/data_processor.py b/data_processor.py
+index 3333333..4444444 100644
+--- a/data_processor.py
++++ b/data_processor.py
+@@ -10,6 +10,10 @@ def process_items(items):
+     result = []
+     for i in range(len(items)):
+         for j in range(len(items)):
++            if i == j:
++                continue
+             result.append(items[i] + items[j])
+     return result

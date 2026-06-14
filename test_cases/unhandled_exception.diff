@@ -1,0 +1,8 @@
+diff --git a/file_reader.py b/file_reader.py
+index 7777777..8888888 100644
+--- a/file_reader.py
++++ b/file_reader.py
+@@ -8,4 +8,7 @@ def read_file(path):
++    with open(path, 'r') as f:
++        return f.read()
++    # No exception handling – will crash if file missing
